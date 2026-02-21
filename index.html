@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Africurative</title>
+  <link rel="stylesheet" href="css/main.css" />
+
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">
+    <img src="assets/images/logo.jpeg" alt="Africurative Logo">
+  </div>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#store">Shop</a>
+    <a href="#about">About</a>
+  </nav>
+
+  <div class="nav-right">    
+    <input type="text" id="searchInput" placeholder="Search products..." />
+    <div class="cart">🛒 0</div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <video autoplay muted loop playsinline class="hero-video">
+    <source src="assets/images/hero-video.mp4" type="video/mp4">
+  </video>
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content fade-in">
+    <h1>Africurative</h1>
+    <p>Premium herbal supplements crafted for total wellness.</p>
+    <button class="btn-primary" onclick="document.getElementById('store').scrollIntoView({behavior:'smooth'})">
+      Explore Products
+    </button>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section class="trust fade-in">
+  <div>⭐ 50,000+ Happy Customers</div>
+  <div>🌿 100% Organic Ingredients</div>
+  <div>🧪 Lab Tested</div>
+  <div>🚚 Nationwide Delivery</div>
+</section>
+
+<!-- CATEGORIES -->
+<section class="categories">
+  <div class="container fade-in">
+    <h2>ALL CATEGORIES</h2>
+
+    <div class="category-grid">
+
+      <div class="category-card" data-category="Brain & Cardiac Health">
+        <div class="category-inner">
+          <span>🧠❤️</span>
+          <p>Brain & Cardiac Health</p>
+        </div>
+      </div>
+
+      <div class="category-card" data-category="Musculoskeletal & Nerve">
+        <div class="category-inner">
+          <span>🦴</span>
+          <p>Musculoskeletal & Nerve</p>
+        </div>
+      </div>
+
+      <div class="category-card" data-category="Liver & Kidney Health">
+        <div class="category-inner">
+          <span>🌿</span>
+          <p>Liver & Kidney Health</p>
+        </div>
+      </div>
+
+      <div class="category-card" data-category="Reproductive / Tumor">
+        <div class="category-inner">
+          <span>🌸</span>
+          <p>Reproductive / Tumor</p>
+        </div>
+      </div>
+
+      <div class="category-card" data-category="Immune / Wellness">
+        <div class="category-inner">
+          <span>✨</span>
+          <p>Immune / Wellness</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products" id="store">
+  <h2>All Product & Supplements</h2>
+
+  <div class="product-grid fade-in" id="productGrid">
+    <!-- Products will load dynamically here -->
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="about-container fade-in">
+
+    <div class="about-text">
+      <h2>About Africurative</h2>
+      <p>
+        Africurative is dedicated to delivering premium herbal supplements 
+        crafted from carefully sourced natural ingredients.
+      </p>
+      <p>
+        Every formulation is designed to restore balance, enhance vitality, 
+        and promote long-term health.
+      </p>
+      <!--<button class="btn-primary">Learn More</button>-->
+    </div>
+
+    <div class="about-image">
+      <img src="assets/images/about.jpg" alt="About Africurative">
+    </div>
+
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials fade-in">
+  <h2>What Our Customers Say</h2>
+
+  <div class="testimonial-grid">
+    <div class="testimonial-card">
+      <p>"Africurative changed my energy levels completely."</p>
+      <span>- Sarah M.</span>
+    </div>
+
+    <div class="testimonial-card">
+      <p>"High quality supplements. I feel the difference."</p>
+      <span>- Daniel A.</span>
+    </div>
+
+    <div class="testimonial-card">
+      <p>"Professional service and fast delivery."</p>
+      <span>- Fatima K.</span>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq fade-in">
+  <h2>Frequently Asked Questions</h2>
+
+  <div class="faq-item">
+    <button class="faq-question">
+      Are Africurative products lab tested?
+      <span class="faq-icon">+</span>
+    </button>
+    <div class="faq-answer">
+      <p>Yes, all our products are professionally lab tested to ensure safety and effectiveness.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">
+      How long before I notice results?
+      <span class="faq-icon">+</span>
+    </button>
+    <div class="faq-answer">
+      <p>Results vary, but most customers notice improvement within 2–4 weeks of consistent use.</p>
+    </div>
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-grid">
+
+    <div>
+      <img src="assets/images/logo.jpeg" alt="Africurative Logo" class="footer-logo">
+      <p>Premium herbal supplements crafted for total wellness.</p>
+    </div>
+
+    <div>
+      <h4>Quick Links</h4>
+      <a href="#home">Home</a>
+      <a href="#store">Shop</a>
+      <a href="#about">About</a>
+    </div>
+
+    <div>
+      <h4>Support</h4>
+      <a href="#">Contact Us</a>
+      <a href="#">Shipping Policy</a>
+      <a href="#">Returns</a>
+    </div>
+
+    <div>
+      <h4>Follow Us</h4>
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+      <a href="#">WhatsApp</a>
+    </div>
+
+  </div>
+    
+
+
+  <div class="copyright">
+    © 2026 Africurative. All rights reserved.
+  </div>
+</footer>
+
+<!-- FAQ TOGGLE -->
+<script>
+document.querySelectorAll(".faq-question").forEach(button => {
+  button.addEventListener("click", () => {
+    const item = button.parentElement;
+    item.classList.toggle("active");
+  });
+});
+</script>
+
+<!-- STORE SCRIPT -->
+<script type="module" src="js/store.js"></script>
+
+<!-- WHATSAPP FLOAT BUTTON -->
+<a href="https://wa.me/2348066996378" 
+   class="whatsapp-float" 
+   target="_blank">
+   💬
+</a>
+
+<!-- PRODUCT MODAL -->
+
+<div id="productModal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <div id="modalText"></div>
+  </div>
+</div>
+
+</body>
+</html>

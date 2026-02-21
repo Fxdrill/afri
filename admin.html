@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h2>Admin – Add Product</h2>
+
+  <form id="productForm">
+
+    <input type="text" id="name" placeholder="Product Name" required>
+
+    <input type="text" id="shortDescription" placeholder="Short Description" required>
+
+    <textarea id="fullDescription" placeholder="Full Description" required></textarea>
+
+    <input type="number" id="price" placeholder="Price (Enter in ₦)" required>
+
+    <input type="number" id="stock" placeholder="Stock" required>
+
+    <!-- CATEGORY -->
+    <select id="category" required>
+      <option value="">Select Category</option>
+      <option value="Brain & Cardiac Health">Brain & Cardiac Health</option>
+      <option value="Musculoskeletal & Nerve">Musculoskeletal & Nerve</option>
+      <option value="Liver & Kidney Health">Liver & Kidney Health</option>
+      <option value="Reproductive / Tumor">Reproductive / Tumor</option>
+      <option value="Immune / Wellness">Immune / Wellness</option>
+    </select>
+
+    <input type="file" id="image" accept="image/*" required>
+
+    <div class="currency-group">
+      <strong>Currency Display:</strong><br><br>
+
+      <label>
+        <input type="radio" name="currency" value="NGN" checked>
+        Show in ₦
+      </label>
+
+      <label>
+        <input type="radio" name="currency" value="USD">
+        Show in $
+      </label>
+
+      <label>
+        <input type="radio" name="currency" value="BOTH">
+        Show Both
+      </label>
+    </div>
+
+    <button type="submit">Add Product</button>
+
+  </form>
+
+  <h3>All Products</h3>
+  <div id="adminProducts"></div>
+
+</div>
+
+<script type="module" src="js/admin.js"></script>
+
+</body>
+</html>
